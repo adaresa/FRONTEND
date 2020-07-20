@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="page"></div>
+    <div id="header">
+      <img src="abc.jpg"></img>
+    <div/>
+    <div id="nav"></div>
+    <div id="content"></div>
+    <div id="footer"></div>
+  </body>
+  
+</html>
+

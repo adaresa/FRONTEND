@@ -1,0 +1,348 @@
+.style-lines {
+	box-sizing: border-box;
+	border-top: 1px solid rgba(101, 101, 101, 1);
+	height: 0;
+}
+.style-navB {
+	width: calc(100% - 0px);
+	height: calc(100% - 0px);
+	white-space: nowrap;
+	display: inline-block;
+	overflow: visible;
+	position: relative;
+}
+.style-navButtonsLoc {
+	margin-top: -20px;
+	height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 15px;
+}
+.style-button_gaps {
+	padding: 0 10px;
+}
+.style-navButtons {
+	display: inline-block;
+	padding: 0 10px;
+	color: white;
+	text-shadow: 2px 1px black;
+	transition: color 0.4s ease 0s;
+}
+.c1bg {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(30, 30, 30, 1);
+	max-width: 300px;
+	min-height: 
+}
+.square {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: white;
+	background-color: #1F1F1F;
+	border: 1px solid #ccc;
+	border-radius: .25rem;
+	text-align: center;
+}
+/* CALENDAR/////////////////////////////////////////// */
+.custom-select {
+	position: relative;
+	font-family: Arial;
+	margin-top:15px;
+	background-color: #1E1E1E;
+	color: white;
+}
+/* DROPDOWN IN SEARCH */
+.custom-select select {
+	display: none;
+   /*hide original SELECT element:*/
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: #1E1E1E;
+	top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+	display: block;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: #1E1E1E;
+	background-image: none;
+	padding: 0px;
+	color: #ffffff;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+}
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background-color: rgb(39, 39, 39);
+	top: 100%;
+	top: 39px;
+	left: -1px;
+	right: 0;
+	z-index: 99;
+	max-height:200px;
+	overflow:overlay;
+	width:271px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(216, 216, 216, 0.1);
+}
+/*///////////////////////////////////////////////////////*/
+input[type="inputA"]::placeholder {
+	color: white;
+}
+input[type=text] {
+	width: 100%;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	background-color: rgba(101, 101, 101, 0.68);
+	border: 1px solid rgba(51, 51, 51, 1);
+	color: #EAEAEA;
+	height:30px;
+	text-align: start;
+}
+textarea{
+	width: 100%;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	background-color: rgba(101, 101, 101, 0.68);
+	border: 1px solid rgba(51, 51, 51, 1);
+	color: #EAEAEA;
+	height:30px;
+	text-align: start;
+}
+textarea::placeholder{
+	color: rgb(199, 199, 199);
+}
+input[type=text]::placeholder {
+	color: rgb(199, 199, 199);
+}
+button[type=submit] {
+	width: 8%;
+	display: block;
+	float: right;
+	font-size: 12px;
+	background-color: rgba(59, 59, 59, 0.68);
+	border: 1px solid rgba(51, 51, 51, 1);
+	color: #EAEAEA;
+	height:30px;
+	text-align: center;
+}
+p {
+	margin-bottom: 0px;
+	font-size: 15px;
+	color: white;
+}
+h2 {
+	line-height: 1.66;
+	margin: 0;
+	padding: 0;
+	font-weight: 900;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.clear {
+	clear: both;
+}
+body {
+	font-size: 14px;
+	line-height: 1.8;
+	color: #222;
+	font-weight: 400;
+	font-family: 'Montserrat';
+	background-color: gray;
+	padding: 115px 0;
+}
+.signup-content {
+	background: #1F1F1F;
+	padding: 50px 85px;
+}
+.form-input {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	padding: 6px 12px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+}
+.form-input::-webkit-input-placeholder {
+	color: white;
+	font-weight: 500;
+}
+.form-input:focus {
+	border: 1px solid transparent;
+	-webkit-border-image-source: -webkit-linear-gradient(to right, #9face6, #74ebd5);
+	border-image-source: linear-gradient(to right, #9face6, #74ebd5);
+	-webkit-border-image-slice: 1;
+	border-image-slice: 1;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.form-input:focus::-webkit-input-placeholder {
+	color: white];
+}
+input, select, textarea {
+	background-color: #1F1F1F;
+}
+.form-submit {
+	width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 17px 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	background-image: linear-gradient(to left, #74ebd5, #9face6);
+}
+input[type=checkbox]:not(old) {
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	display: none;
+}
+input[type=checkbox]:not(old) + label > span {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	border: 1px solid #ebebeb;
+	border-radius: 2px;
+	background: white;
+	vertical-align: bottom;
+}
+input[type=checkbox]:not(old):checked + label > span:before {
+	content: '\f26b';
+	display: block;
+	color: #1F1F1F;
+	font-size: 11px;
+	line-height: 1.2;
+	text-align: center;
+	font-family: 'Material-Design-Iconic-Font';
+	font-weight: bold;
+}
+.label-agree-term {
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+}
+.term-service {
+	color: rgb(158, 158, 158);
+}
+.loginhere {
+	color: rgb(158, 158, 158);
+	font-weight: 500;
+	text-align: center;
+	margin-top: 91px;
+	margin-bottom: 5px;
+}
+.loginhere-link {
+	font-weight: 700;
+	color: white;
+}
+.field-icon {
+	float: right;
+	margin-right: 17px;
+	margin-top: -32px;
+	position: relative;
+	z-index: 2;
+	color: #555;
+}
+/* LANGUAGE DROPDOWN */
+.dropbtn {
+	background-color: transparent;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: 0px solid;
+}
+.dropbtn:focus{
+	outline: none;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	min-width: 50px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+   background-color: #1F1F1F;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+.dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+}
+/* /// */
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  background: rgb(36, 36, 36); 
+  border-radius: 5px; 
+  text-align: left;
+}

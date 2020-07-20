@@ -1,0 +1,55 @@
+/* banner */
+.banner{
+    position: relative;
+    width: 1152px;
+    height: 110px;
+    left: 160px;
+    top: 0;
+    opacity: 0.9;
+    align-self: center;
+}
+
+
+
+
+
+.banner-text{
+    text-align:center;
+    color:yellow;   
+}
+
+
+/* reg form */
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-facebook:hover{
+    color:#42AEEC;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
