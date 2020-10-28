@@ -1,0 +1,54 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+        <!-- import jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- function for alert when click on button -->
+        <script>
+            function clickAlert() {
+                alert("Caught me!!!");
+            }
+        </script>
+        <!-- jquery function for button "running" from cursor -->
+        <script>
+            jQuery(function($) {
+                // function runs when mouse over object with id "btn"
+                $('#btn').mouseover(function() {
+                    // get random X and Y coordinates for new button location
+                    var nextX = 5 + Math.floor(Math.random() * 90), // Number between 5 and 95
+                        nextY = 5 + Math.floor(Math.random() * 90); // Number between 5 and 95
+                    $(this).animate({
+                        // move button to new location between 5 and 95 % for both X and Y from edge of window
+                        left: nextX + '%',
+                        top: nextY + '%'
+                    });
+                });
+            });
+        </script>
+        <style>
+            /* style for button object */
+            
+            .btn {
+                cursor: pointer;
+                background-color: #555555;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 30px;
+            }
+            /* style for when mouse over button */
+            
+            .btn:hover {
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- create a button on the screen -->
+        <button onclick="clickAlert()" class="btn" id="btn">Click me!</button>
+    </body>
+
+    </html>
